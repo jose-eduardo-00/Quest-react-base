@@ -1,14 +1,13 @@
-import React from 'react'
+import Text from './componentes/StyledText/index.js';
+import Button from './componentes/AlertButton/button.js';
 
-
-class App extends React.Component{
-    render(){
-        return(
-            <div className='header'>
-                <p style={{color: this.props.color, textTransform: "uppercase"}}>{this.props.p}</p>
-            </div>
-        )
-    }
-}
+function App(){
+    return(
+        <>
+          <Text p="Texto a ser estilizado" color="#0ffff8"/>
+          <Button label="Baixar CV"/>
+        </>
+    )
+};
 
 export default App;
